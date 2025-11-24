@@ -16,4 +16,4 @@ It is intended for exploring, analyzing, and experimenting with Docker container
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Dock-Guardian.git
+   https://github.com/YasithPiyumantha/DockGuardian.git
