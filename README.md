@@ -342,34 +342,10 @@ MIT License - see LICENSE file for details
 
 ## 👥 Contributors
 
-- Your Name - Initial development
+- Yasith Piyumantha - Initial development
 
 ## 🙏 Acknowledgments
 
 - Syft by Anchore for vulnerability scanning
 - CIS Docker Benchmark for security standards
 - Material-UI for frontend components
-
-## 📧 Contact
-
-For questions or support, please open an issue on GitHub.
-
-## 🔄 Version History
-
-**v1.2** (January 2026)
-- Added frontend scan trigger functionality
-- Implemented task-based polling for scans
-- Fixed timestamp display in dashboard
-- Added CLI agent interface
-- Improved error handling
-
-**v1.1** (January 2026)
-- Added auto-healer with backup/rollback
-- Implemented task polling architecture
-- Added CIS benchmark scanning
-- Enhanced dashboard UI
-
-**v1.0** (December 2025)
-- Initial release
-- Basic vulnerability scanning
-- Web dashboard
