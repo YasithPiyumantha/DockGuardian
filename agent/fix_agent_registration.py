@@ -26,7 +26,7 @@ print(f"IP Address: {ip_address}")
 print(f"API Key: {api_key[:20]}...")
 
 # Update MongoDB
-client = MongoClient('mongodb+srv://dockguardian:mDLCe7nW4IBxkOQR@dockguardian.3yoiil8.mongodb.net/dockguardian')
+client = MongoClient('mmongodb+srv://user:pass@cluster.mongodb.net/dockguardian')
 db = client['dockguardian']
 
 # Delete old agent with wrong ID
