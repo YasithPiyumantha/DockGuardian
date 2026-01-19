@@ -1,0 +1,64 @@
+# Dependencies
+**/node_modules/
+**/venv/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables (IMPORTANT: Never commit these!)
+**/.env
+*.env
+.env.*
+
+# Build outputs
+**/build/
+**/dist/
+*.log
+nohup.out
+task_poller.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Backups
+*.backup
+*.backup*
+*.backup2
+*.backup_timestamp
+
+# Agent specific
+agent/backups/
+agent/*.tar
+agent/task_poller.log
+agent/nohup.out
+
+# Package files
+*.tgz
+ngrok-*.tgz
+
+# Lock files (optional - you can include these if you want)
+package-lock.json
+yarn.lock
+
+# Database dumps
+*.dump
+
+# Google Cloud
+Gcloud/
+**/service-account-key.json
+
+# Tree outputs
+tree_output.txt
+
+# Test files
+test/
+tests/
