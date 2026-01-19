@@ -11,7 +11,7 @@ It is intended for exploring, analyzing, and experimenting with Docker container
 - `notebooks/` – Jupyter notebooks demonstrating data analysis, experiments, and insights.  
 
 
-## 🌟 Features
+## Features
 
 - 🔍 **Vulnerability Scanning**: Automated CVE detection using Syft
 - 🛡️ **CIS Benchmark Compliance**: Docker CIS benchmark automated checking  
@@ -23,7 +23,7 @@ It is intended for exploring, analyzing, and experimenting with Docker container
 - ⚡ **Task-Based Polling**: Efficient agent communication without direct connectivity
 - 📦 **Backup & Restore**: Automatic container backups before remediation
 
-## 🏗️ Architecture
+## Architecture
 ```
 ┌─────────────┐         ┌─────────────┐         ┌─────────────┐
 │   Frontend  │ ◄─────► │   Backend   │ ◄─────► │   MongoDB   │
@@ -51,7 +51,7 @@ It is intended for exploring, analyzing, and experimenting with Docker container
 - **Database**: MongoDB Atlas
 - **Deployment**: Google Cloud Run
 
-## 📁 Project Structure
+## Project Structure
 ```
 DockGuardian/
 ├── agent/              # Python scanning agent
@@ -77,7 +77,7 @@ DockGuardian/
     └── comprehensive_seed.py  # Database seeding
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Docker & Docker Compose
@@ -128,7 +128,7 @@ cp .env.example .env
 python3 task_poller.py &
 ```
 
-## 💻 Agent CLI Interface
+## Agent CLI Interface
 
 DockGuardian includes a standalone terminal-based interface for managing the agent:
 
@@ -140,13 +140,13 @@ python3 agent_cli.py
 ```
 
 ### Features
-- ✅ Real-time agent status monitoring
-- ✅ Start/Stop task poller with one click
-- ✅ Trigger full container scans
-- ✅ View running containers
-- ✅ Live log streaming
-- ✅ Color-coded status indicators
-- ✅ Keyboard-driven navigation
+- Real-time agent status monitoring
+- Start/Stop task poller with one click
+- Trigger full container scans
+- View running containers
+- Live log streaming
+- Color-coded status indicators
+- Keyboard-driven navigation
 
 ### Keyboard Controls
 - `↑/↓` - Navigate menu
@@ -156,7 +156,7 @@ python3 agent_cli.py
 
 ![CLI Interface Screenshot]
 
-## 📖 Usage
+## Usage
 
 ### Running Scans
 
@@ -184,9 +184,9 @@ The auto-healer automatically fixes security issues:
 6. View backup history and rollback if needed
 
 **Supported Fixes:**
-- ✅ Running as root (CIS-4.1)
-- ✅ Privileged mode (CIS-5.4)
-- ✅ Read-only filesystem (CIS-5.12)
+- Running as root (CIS-4.1)
+- Privileged mode (CIS-5.4)
+- Read-only filesystem (CIS-5.12)
 
 ### Task Poller
 
@@ -246,7 +246,7 @@ AGENT_PORT=5000
 MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/dockguardian
 ```
 
-## 🌐 Deployment
+## Deployment
 
 ### Google Cloud Run Deployment
 
@@ -265,18 +265,18 @@ gcloud run deploy dockguardian-frontend --source .
 
 **Agent** runs on your local infrastructure and polls the cloud backend.
 
-## 🔒 Security Features
+## Security Features
 
-- ✅ Container vulnerability detection (CVE scanning via Syft)
-- ✅ CIS Docker Benchmark compliance checking
-- ✅ Automated security remediation with backups
-- ✅ Real-time threat scoring algorithm
-- ✅ Task-based polling architecture (agent-initiated)
-- ✅ Secure agent authentication with API keys
-- ✅ JWT-based user authentication
-- ✅ Rollback capability for all healing operations
+- Container vulnerability detection (CVE scanning via Syft)
+- CIS Docker Benchmark compliance checking
+- Automated security remediation with backups
+- Real-time threat scoring algorithm
+- Task-based polling architecture (agent-initiated)
+- Secure agent authentication with API keys
+- JWT-based user authentication
+- Rollback capability for all healing operations
 
-## 🎯 Workflow
+## Workflow
 
 1. **Scan**: Agent scans Docker containers using Syft
 2. **Analyze**: Backend calculates threat scores and identifies issues
@@ -284,7 +284,7 @@ gcloud run deploy dockguardian-frontend --source .
 4. **Remediate**: Auto-healer fixes CIS benchmark violations
 5. **Verify**: Re-scan to confirm fixes applied successfully
 
-## 🛠️ Development
+## Development
 
 ### Running Tests
 ```bash
@@ -309,7 +309,7 @@ Edit `agent/cis_checks.py` and add your check to the `CISChecker` class.
 
 Edit `agent/healer.py` and implement the remediation logic.
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 - **Security Overview**: Total containers, critical risks, threat scores
 - **Recent Scans**: Latest scan results with threat levels
@@ -318,7 +318,7 @@ Edit `agent/healer.py` and implement the remediation logic.
 - **Auto-Healer**: One-click remediation with backup/rollback
 - **Scan Trigger**: Manually trigger scans for selected containers
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Agent Can't Connect to Backend
 - Verify `BACKEND_URL` in `agent/.env`
@@ -334,14 +334,6 @@ Edit `agent/healer.py` and implement the remediation logic.
 - Ensure task poller is running: `ps aux | grep task_poller`
 - Check agent has Docker permissions
 - Review healing logs in task_poller.log
-
-## 📝 License
-
-MIT License - see LICENSE file for details
-
-## 👥 Contributors
-
-- Yasith Piyumantha - Initial development
 
 ## 🙏 Acknowledgments
 
