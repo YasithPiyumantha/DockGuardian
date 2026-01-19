@@ -5,12 +5,11 @@ It is intended for exploring, analyzing, and experimenting with Docker container
 
 ---
 
-## Contents
+## Additional Contents
 
 - `datasets/` – Folder containing dataset files used for analysis.  
 - `notebooks/` – Jupyter notebooks demonstrating data analysis, experiments, and insights.  
 
----
 
 ## 🌟 Features
 
