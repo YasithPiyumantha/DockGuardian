@@ -1,4 +1,4 @@
-# Dock-Guardian Repository
+# Dock-Guardian - Docker Security Scanner
 
 This repository contains **dataset files** and **Jupyter notebooks** for the Dock-Guardian project.  
 It is intended for exploring, analyzing, and experimenting with Docker container vulnerabilities and security assessments.
