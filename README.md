@@ -335,7 +335,7 @@ Edit `agent/healer.py` and implement the remediation logic.
 - Check agent has Docker permissions
 - Review healing logs in task_poller.log
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Syft by Anchore for vulnerability scanning
 - CIS Docker Benchmark for security standards
